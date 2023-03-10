@@ -8,4 +8,12 @@ if num<1000:
     cent = int(num/100)
     deze = int((num-(cent*100))/10)
     unid = int(num-(cent*100)-(deze*100)/10)
-    print(f"{num} = {cent} centena(s), {deze} dezena(s) e {unid} unidade(s)")
+    
+
+#tratar dados
+if cent>0:
+    print(f"{cent} centenas", end=' ')
+if deze>0:
+    print(f"{deze} dezenas", end=' ')
+if unid>0:
+    print(f"{unid} unidades", end=' ')
