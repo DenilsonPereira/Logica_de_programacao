@@ -1,0 +1,15 @@
+nome=input("Qual o nome do atleta? ")
+saltos=[]
+for i in range(5):
+    salto=float(input("Qual a altura do salto? "))
+    saltos.append(salto)
+print(f"Atleta: {nome} \n")
+print(f"Primeiro Salto: {saltos[0]} m")
+print(f"Segundo Salto: {saltos[1]} m")
+print(f"Terceiro Salto: {saltos[2]} m")
+print(f"Quarto Salto: {saltos[3]} m")
+print(f"Quinto Salto: {saltos[4]} m \n")
+print("Resultado final: ")
+print(f"Atleta: {nome}")
+print(f"Saltos: {saltos[0]} - {saltos[1]} - {saltos[2]} - {saltos[3]} - {saltos[3]} - {saltos[4]}")
+print(f"Media dos Saltos: {(sum(saltos))/5} m")
