@@ -1,5 +1,10 @@
 primeira=input("Digite algo: ")
 segunda=input("Digite mais alguma coisa: ")
+terceira=""
 
-posicao=primeira.count(segunda)
-print(posicao)
+for i in primeira:
+    if i not in segunda:
+        terceira+=i
+print(f"1ª String: {primeira}")
+print(f"2ª String: {segunda}")
+print(f"3ª String: {terceira}")
