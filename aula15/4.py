@@ -20,7 +20,48 @@ while True:
     print("0 - Sair")
     
     opcao=int(input("Escolha a opção: "))
+    if opcao==0:
+        print("Encerrando!")
+        break
     if opcao==1:
         nome=input("Qual o nome? ")
-        nomes={nome,}
-        agenda.update(nomes)
+        telefone=input("Digite os telefones separados por virgula: ").split(",")
+        agenda[nome]=telefone
+        print("Adicionado com sucesso!")
+    elif opcao==2:
+        nome=input("Digite o nome: ")
+        if nome in agenda:
+            telefone=input("Digite o telefone que deseja adicionar: ")
+            agenda[nome].append(telefone)
+        else:
+            opcao=input("Nome não encontrado, deseja adicionar? (S/N)").lower()
+            if opcao=="s":
+                telefone=input("Digite os telefones separados por vírgulas: ").split(",")
+                agenda[nome]=telefone
+                print("Nome adicionado com sucesso!")
+    elif opcao==3:
+        nome=input("Informe o nome: ")
+        if nome in agenda:
+            if len(agenda[nome])==1:
+                opcao=input(f"{nome} tem apenas um telefone. Deseja excluir da agenda? (S/N)").lower()
+                if opcao=="s":
+                    agenda.pop(nome)
+                    print("Nome excluido com sucesso!")
+                else:
+                    telefone=input("Informe o telefone: ")
+                    agenda[nome].remove(telefone)
+                    print("Telefone removido com sucesso!")
+            else: print("Nome não encotrado!")
+    elif opcao==4:
+        nome=input("Informe o nome: ")
+        if nome in agenda:
+            agenda.pop(nome)
+            print("Nome removido com sucesso!")
+        else: print("Nome não encontrado!")
+    elif opcao==5:
+        nome=input("Informe o nome: ")
+        if nome in agenda:
+            print(agenda[nome])
+            print("Telefones: ", ",".join(agenda[nome]))
+        else: print("Nome não encontrado!")
+    else: print("Opção inválida!")
