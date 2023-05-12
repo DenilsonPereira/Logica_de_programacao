@@ -6,7 +6,6 @@ Obs: Não converter a tupla para nenhum outro tipo.
 '''
 t=(1, 3, 5, 2, 3, 5, 1, 1, 3)
 print("A tupla original é: ",t)
-
 t1=tuple()
 for i in range(len(t)):
     if t[i] not in t1:

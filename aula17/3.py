@@ -7,4 +7,4 @@ def triangulo(n):
         print()
     n=' '
     return n
-print(triangulo(6))
+print(triangulo(3))

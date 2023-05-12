@@ -4,6 +4,7 @@ filmes={'Batman Forever':{'Duas Caras': '1995'},
         'Homem-Aranha: Longe de Casa':{'Mysterio':'2019'}, 
         'Duro de Matar':{'Hans Gruber':'1988'}, 
         'Vingadores: Ultimato':{'Thanos':'2019'}}
+
 while True:
     des=input("Deseja pesquisar (s/n)? ").lower()
     if des=='n':
