@@ -4,4 +4,4 @@ def potencia(a,b):
     for i in range(b):
         auxiliar*=a
     return auxiliar
-print(potencia(4,1))
+print(potencia(5,1))

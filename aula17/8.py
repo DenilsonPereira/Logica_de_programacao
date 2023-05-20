@@ -68,3 +68,14 @@ def contatos():
             else: print("Nome não encontrado!")
         else: print("Opção inválida!")
 contatos()
+
+'''
+def menu()
+def nomeExiste()
+def incluirNome()
+def incluirTelefone()
+def excluirNome()
+def excluirTelefone()
+def comsultarTelefones()
+def exibirAgenda()
+'''
